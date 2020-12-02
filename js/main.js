@@ -27,7 +27,7 @@ const year = document.getElementById('year-input')
 const nameMovie = document.getElementById('input-search')
 const typeMovie = document.getElementById('type-input')
 const container = document.getElementById('container')
-const btnSearch = document.getElementById('buscar')
+const btnSearch = document.getElementById('find')
 
 
 window.addEventListener('load', function(){
@@ -74,7 +74,7 @@ async function fetchData(name, year, type) {
             })
         }
 
-    } else container.innerHTML = '<h1>sin resultados</h1>'
+    } else container.innerHTML = '<h1>Try a different search</h1>'
    
 }
 

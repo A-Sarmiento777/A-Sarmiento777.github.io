@@ -1,6 +1,6 @@
 
 const apis = new Omdb()
-const titulo = document.querySelector('.title')
+const title = document.querySelector('.title')
 const container = document.querySelector('.container')
 
 window.onload = function() {
@@ -31,7 +31,7 @@ apis.getMovie(localStorage.getItem('movieId'))
                     <br><br>
                     <p>` + base.Plot + `</p>
                 </div>
-                <img class="img" src="` + (base.Poster != 'N/A' ? base.Poster : './../assets/default.png') + `" alt="imagen">
+                <img class="img" src="` + (base.Poster != 'N/A' ? base.Poster : './../img/default.png') + `" alt="imagen">
             `
     container.appendChild(movie)
 

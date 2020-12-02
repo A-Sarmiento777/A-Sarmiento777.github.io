@@ -28,7 +28,7 @@
 		}
 		
 		.background{
-			background-image: url('.././assets/background.jpeg');
+			background-image: url('.././img/background.jpeg');
 			background-size: cover;
 			display:block;
 			width:100vw;
