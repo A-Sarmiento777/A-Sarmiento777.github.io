@@ -1,0 +1,142 @@
+:root{
+			--margin-container:0rem .5rem;
+			--text-color: #ecf0f1;
+			--input-padding: 6px 12px;
+		}
+
+		*{
+			box-sizing: border-box;
+			margin:0;
+			padding:0;
+		}
+
+		body{
+			min-height:100vh;
+			background:#000;
+			color:var(--text-color);
+			padding:var(--margin-container);
+		}
+
+		.header{
+			display:flex;
+			flex-direction:column;
+			justify-content:flex-start;
+			align-items: stretch;
+			padding:.75rem;
+			width: 100%;
+			background:#000000aa;
+		}
+		
+		.background{
+			background-image: url('.././assets/background.jpeg');
+			background-size: cover;
+			display:block;
+			width:100vw;
+			height:100vh;
+			position: fixed;
+			top:0;
+			left:0;
+			z-index:-1;
+			object-fit: cover;
+			opacity: 0.5;
+			box-shadow:0 -20px 80px #000000 inset;
+		}
+
+		.input{
+			padding:var(--input-padding);
+			border-radius: 4px;
+			border:none;
+			background: var(--text-color);
+			outline:none;
+			box-shadow: 0 4px 3px #00000055;
+			margin-right:.5rem; 
+		}
+
+		.select{
+			cursor:pointer;
+		}
+
+		.button{
+			padding:var(--input-padding);
+			color:var(--text-color);
+			cursor:pointer;
+			border-radius: 4px;
+			border:none;
+			box-shadow: 0 4px 3px #00000055;
+            margin-right:0;
+			text-decoration:none;
+			margin-bottom:.5rem;
+		}
+
+		.button-blue{
+			background-color: #3498db;
+		}
+
+		.button-blue:hover{
+			background-color: #2980b9;
+		}
+
+		.button-purple{
+			background-color: #9b59b6;
+		}
+
+		.button-purple:hover{
+			background-color: #8e44ad;
+		}
+
+		#container, .container{
+			margin-top:2rem;
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+		}
+
+		.movieContainer{
+			cursor:pointer;
+			display:flex;
+			justify-content: space-between;
+			flex-direction:column-reverse;
+			max-width:600px;
+			margin:1rem 1rem;
+			background: #2c3e50;
+			border-radius: 8px;
+			overflow:hidden;
+		}
+
+		.movie-content{
+			flex-grow: 1;
+			text-align: center;
+			padding:1rem;
+		}
+
+		.img{
+			width:100%;
+		}
+
+		.title{
+			font-size:1.25rem;
+			margin-bottom:.25rem;
+		}
+
+		@media screen and (min-width:600px) {
+			:root{
+				--margin-container: 0rem 2.5rem; 
+			}
+
+			.header{
+				display:flex;
+				flex-direction:row;
+				justify-content: space-between;
+				align-items: center;
+				padding:.75rem 2.5rem;
+			}
+
+			.button{
+				margin-right:1rem;
+				margin-bottom:0;
+			}
+
+			.movieContainer{
+				flex-direction:row-reverse;
+			}
+		}

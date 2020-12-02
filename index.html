@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>OMDb template</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+	<div class="background" ></div>
+
+	
+
+	<header class="header">
+		<h1 class="title">SEARCH YOUR MOVIE HERE</h1>
+		<div class="form">
+			<button id="buscar" class="button" style="color:black;">search</button>
+			<input type="text" class="input" id="input-search" placeholder="search movie..." autofocus autocomplete="off">
+			<select name="seleccion" class="button button-purple" id='type-input'>
+				<option value="" selected disabled>Choose type</option>
+				<option value="">all</option>
+				<option value="game">game</option>
+				<option value="movie">movies</option>
+				<option value="series">series</option>
+				<option value="episode">episodes</option>
+			</select>
+			<select name="seleccion" class="button button-blue" id="year-input">
+				<option value="" selected disabled>Choose release year</option>
+				<option value="">all</option>
+			</select>
+		</div>
+	</header>
+
+	<div id="container">
+
+	</div>
+	<script src="js/api.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
